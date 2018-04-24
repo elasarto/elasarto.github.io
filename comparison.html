@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Data Visualization Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="index.html">Data Visualization Dashboard</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Plots
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="max_temp.html">Max. Temperature</a>
+                                  <a class="dropdown-item" href="humidity.html">Humidity</a>
+                                  <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                                  <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+                                </div>
+                              </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="comparison.html">Comparison</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="data.html">Data</a>
+                              </li>
+                      </ul>
+                    </div>
+                  </nav>        
+    </header>
+    <main> 
+        <div class="container">
+            <div class="row" id="test"></div>
+        </div>
+                    <div class="container">
+                            <div class="row justify-content-center">
+                            <div class="col-lg col-md" id="charts-compare">
+                                    <h5 style="font-size:2.5vw">Comparison: Latitude vs. "X"</h6>
+                                    <hr>
+                            </div>
+                      <div class="w-100" id="charts-compare2">
+                            <p>Click any plot to get an in-depth analysis.</p>
+                      </div>
+
+                      <div class="col-lg col-md" id="charts-compare">
+                                <ul class="list-unstyled">
+                                    <li class="media">
+                                        <figure class="figure">
+                                            <figcaption class="figure-caption" id="fig-compare">vs. Max. Temperature</figcaption>
+                                                <a href="max_temp.html" class="box"><img src="Latitude_MaxTemp.png" class="figure-img img-fluid rounded mr-3" alt="temp chart" width=500>
+                                                </a>
+                                            </figure>
+                                    </li>
+                                </ul>
+                      </div>
+                      <div class="col-lg col-md" id="charts-compare">
+                           
+                                <ul class="list-unstyled">
+                                    <li class="media">
+                                        <figure class="figure">
+                                            <figcaption class="figure-caption" id="fig-compare">vs. Humidity</figcaption>
+                                                <a href="humidity.html" class="box"><img src="Latitude_Humidity copy.png" class="figure-img img-fluid rounded mr-3" alt="humidity chart" width=500>
+                                                </a>
+                                            </figure>
+                                    </li>
+                                </ul>
+                      </div>
+                      <div class="container">
+                            <div class="row justify-content-center">
+                            <div class="col-lg col-md" id="charts-compare">
+                                    
+                                    <hr>
+                            </div>
+                      <div class="w-100" id="charts-compare2">
+                            <p>Click any plot to get an in-depth analysis.</p>
+                      </div>
+
+                      <div class="col-lg col-md" id="charts-compare">
+                            
+                                <ul class="list-unstyled">
+                                    <li class="media">
+                                        <figure class="figure">
+                                            <figcaption class="figure-caption" id="fig-compare">vs. Cloudiness</figcaption>
+                                                <a href="cloudiness.html" class="box"><img src="Latitude_Cloudiness copy.png" class="figure-img img-fluid rounded mr-3" alt="Cloudiness chart" width=500>
+                                                </a>
+                                            </figure>
+                                    </li>
+                                </ul>
+                      </div>
+                      <div class="col-lg col-md" id="charts-compare">
+                           
+                                <ul class="list-unstyled">
+                                    <li class="media">
+                                        <figure class="figure">
+                                            <figcaption class="figure-caption" id="fig-compare">vs. Wind Speed</figcaption>
+                                                <a href="wind_speed.html" class="box"><img src="Wind_Speed copy.png" class="figure-img img-fluid rounded mr-3" alt="wind_speed chart" width=500>
+                                                </a>
+                                            </figure>
+                                    </li>
+                                </ul>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    <div class="footer">
+        <p>Copyright 2018</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+</html>
