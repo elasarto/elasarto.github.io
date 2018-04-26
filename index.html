@@ -17,12 +17,12 @@
                     </button>
                   
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav mr-auto">
+                      <ul class="navbar-nav ml-auto">
                         <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                   Plots
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                   <a class="dropdown-item" href="max_temp.html">Max. Temperature</a>
                                   <a class="dropdown-item" href="humidity.html">Humidity</a>
                                   <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
@@ -42,25 +42,30 @@
     <main>
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md" id="weather-summary">
+                <div class="col-md-7" id="weather-summary">
                     <h5 style="font-size:2.5vw">Summary: Latitude vs. "X"</h5>
                     <hr>
                 <div class="media">
-                        <img class="mr-3" src="Latitude_MaxTemp.png" alt="temp chart" width=400>
-                        <div class="media-body">
-                            
-                        <h5 class="mt-0">Weather Analysis - Observed Trends:</h5>
-    <ul>                  
-	<li>Cities closest to the equater have higher maximum temperatures. Cities farther away from the equator have lower maximum temperatures.</li>
-	<li>Humidity increases as latitude approaches the equator.</li>
-	<li>Cloudiness decreases as latitude approaches the equator.</li>
-	<li>The majority of cities in the data set have wind speeds from 0 - 20mph; speeds appear to decrease as latitude approaches the equator.</li>
-    </ul>                    
+                <div class="media-body" style="float:left; width:50%;"> 
+                    
+                <img class="mr-3" src="Latitude_MaxTemp.png" alt="temp chart" width=300 style="float:left">    
+                <h5 class="mt-0">Weather Trend Analysis Project</h5>
+                <p>
+                
+                The scope of this project was to analyze how weather changes as locations approach the equator. <br> <br> Weather indicators that were assessed in 
+                this analysis include maximum temperature, cloudiness, humidity, and wind speed, for over 500 cities around the world. Using a dataset of over 500
+                unique latitude/longitude coordinate pairs, and the OpenWeather API, these weather indicators were identified, collected, analyzed and plotted. <br> <br> 
+                The resulting analysis illustrates the trends observed for a given weather indicator, relative to the latitude of its city's location. 
+            
+                </p>
+    
+    
+
     </div>
                         </div>  
                 </div>
                 
-                <div class="col-md" id="weather-summary2">
+                <div class="col-md-4" id="weather-summary2">
                         <h5 style="font-size:2.5vw">Visualizations</h5>
                         <hr>
                         <table class="table table-borderless">
@@ -68,33 +73,33 @@
                                 <tr>
                                     <td>
                                             <figure class="figure">
-                                                    <figcaption class="figure-caption" id="fig-compare">vs. Max. Temperature</figcaption>
+                        
                                                         <a href="max_temp.html" class="box"><img src="Latitude_MaxTemp.png" class="figure-img img-fluid rounded mr-3" alt="temp chart" width=500>
                                                         </a>
-                                                    </figure>
+                                                    
                                     </td>
                                     <td>
                                             <figure class="figure">
-                                                    <figcaption class="figure-caption" id="fig-compare">vs. Cloudiness</figcaption>
+                                                   
                                                         <a href="cloudiness.html" class="box"><img src="Latitude_Cloudiness copy.png" class="figure-img img-fluid rounded mr-3" alt="Cloudiness chart" width=500>
                                                         </a>
-                                                    </figure>
+                                                   
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
                                             <figure class="figure">
-                                                    <figcaption class="figure-caption" id="fig-compare">vs. Humidity</figcaption>
+                                                    
                                                         <a href="humidity.html" class="box"><img src="Latitude_Humidity copy.png" class="figure-img img-fluid rounded mr-3" alt="humidity chart" width=500>
                                                         </a>
-                                                    </figure>
+                                                   
                                     </td>
                                     <td>
                                             <figure class="figure">
-                                                    <figcaption class="figure-caption" id="fig-compare">vs. Wind Speed</figcaption>
+                                                    
                                                         <a href="wind_speed.html" class="box"><img src="Wind_Speed copy.png" class="figure-img img-fluid rounded mr-3" alt="wind_speed chart" width=500>
                                                         </a>
-                                                    </figure>
+                                                    
                                     </td>
                                 </tr>
                             </tbody> 
