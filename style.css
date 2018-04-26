@@ -9,8 +9,9 @@
     font-size:80%;
     padding:25px;
     margin-top:50px;
-    margin-left:10px;
+    margin-left:20px;
     margin-right:20px;
+    
 }   
     
 #weather-summary2{
@@ -21,11 +22,30 @@
     font-size:80%;
     padding:25px;
     margin-top:50px;
-    margin-left:10px;
+    margin-left:20px;
     margin-right:20px;
+    margin-bottom:90px;
     height:60%; 
 }   
-  
+
+@media (max-width: 767.98px){
+    #weather-summary {
+      display: block;
+    }
+  }
+
+@media (max-width: 767.98px){
+    #charts-compare {
+      display: block;
+    }
+  }
+
+@media (max-width: 767.98px){
+    #plot-pages {
+      display: block;
+    }
+  }
+
 #plot-pages{
 
     background-color:rgb(255, 255, 255);
@@ -34,7 +54,7 @@
     font-size:80%;
     padding:25px;
     margin-top:50px;
-    margin-left:10px;
+    margin-left:20px;
     margin-right:20px;  
 }
 #plot-pages2{
@@ -45,8 +65,9 @@
     font-size:80%;
     padding:25px;
     margin-top:50px;
-    margin-left:10px;
+    margin-left:20px;
     margin-right:20px;
+    margin-bottom:90px;
     height:60%;   
 }
 #charts-compare{
@@ -112,7 +133,9 @@
     font-size:80%;
     padding:25px;
     margin-top:50px;
-    margin-bottom:90px; 
+    margin-bottom:90px;
+    margin-left:20px;
+    margin-right:20px; 
 }
 
 h6, h5{
